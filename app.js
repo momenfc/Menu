@@ -2,7 +2,7 @@ const meals = [
   {
     id: 1,
     name: 'buttermilk pancakes',
-    price: 30.5,
+    price: 30,
     image:
       'https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
     descraption:
@@ -13,7 +13,7 @@ const meals = [
   {
     id: 2,
     name: 'janck',
-    price: 20.0,
+    price: 20,
     image:
       'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     descraption:
@@ -24,7 +24,7 @@ const meals = [
   {
     id: 3,
     name: 'pinabatter',
-    price: 10.5,
+    price: 10,
     image:
       'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80',
     descraption:
@@ -35,7 +35,7 @@ const meals = [
   {
     id: 4,
     name: 'routhbeef',
-    price: 40.5,
+    price: 40,
     image:
       'https://images.unsplash.com/photo-1529042410759-befb1204b468?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80',
     descraption:
@@ -46,7 +46,7 @@ const meals = [
   {
     id: 5,
     name: 'avocado with souse',
-    price: 35.5,
+    price: 35,
     image:
       'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
     descraption:
@@ -57,7 +57,7 @@ const meals = [
   {
     id: 6,
     name: 'pizza huat',
-    price: 45.5,
+    price: 45,
     image:
       'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     descraption:
@@ -68,7 +68,7 @@ const meals = [
   {
     id: 7,
     name: 'stick beef',
-    price: 99.99,
+    price: 99,
     image:
       'https://images.unsplash.com/photo-1603073163308-9654c3fb70b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
     descraption:
@@ -270,6 +270,7 @@ modalAddrecipe.addEventListener('click', function (e) {
 
 addRecipeBtn.addEventListener('click', function (e) {
   state.status = 'ADD';
+  clearInput();
 
   showModalRecipe();
 });

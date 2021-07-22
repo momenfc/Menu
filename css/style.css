@@ -231,6 +231,7 @@ footer {
   align-items: center;
   cursor: pointer;
   margin-left: auto;
+  margin-bottom: 3.5rem;
 }
 
 .add-new i {
