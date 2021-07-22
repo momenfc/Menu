@@ -146,7 +146,13 @@ const menuContent = document.querySelector('.menu-content'),
     '.form-add-recipe textarea[name=descraption]'
   ),
   recipeCate = document.querySelector('.form-add-recipe input[name=category]'),
-  recipeRating = document.querySelector('.form-add-recipe input[name=rating]');
+  recipeRating = document.querySelector('.form-add-recipe input[name=rating]'),
+  darkModeBtn = document.querySelector('.dark-mode-btn');
+
+// DARK MODE
+darkModeBtn.addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode');
+});
 
 // function
 const getAllCategory = state.menu.reduce(
