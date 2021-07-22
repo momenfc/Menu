@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <section class="menu">
+      <div class="container">
+        <div class="menu-head">
+          <div class="menu-title">
+            <h2>our menu</h2>
+            <div class="underline"></div>
+          </div>
+          <div class="menu-filter">
+            <!-- <button data-filter="all" class="btn btn-yellow menu-filter-btn">
+              all</button
+            ><button
+              data-filter="breakfast"
+              class="btn btn-yellow menu-filter-btn"
+            >
+              breakfast</button
+            ><button data-filter="lunch" class="btn btn-yellow menu-filter-btn">
+              lunch</button
+            ><button
+              data-filter="shakes"
+              class="btn btn-yellow menu-filter-btn"
+            >
+              shakes
+            </button> -->
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <article class="item">
+            <!--  -->
+            <div class="item-img">
+              <img
+                src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+                alt="recipe photo"
+              />
+            </div>
+            <!--  -->
+            <div class="item-text">
+              <div class="item-title">
+                <h4>buttermilk pancakes</h4>
+                <p class="item-price">$15.99</p>
+              </div>
+              <!--  -->
+              <p class="item-discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, voluptatibus deleniti. Voluptatem temporibus sit
+                possimus consequatur ea debitis minus? Veritatis.
+              </p>
+              <div class="item-rate">
+                <span class="rate-star"><i class="fas fa-star"></i></span>
+                <span class="rate-star"><i class="fas fa-star"></i></span>
+                <span class="rate-star"><i class="fas fa-star"></i></span>
+                <span class="rate-star"><i class="fas fa-star-half"></i></span>
+              </div>
+            </div>
+          </article>
+          <article class="item">
+            <!--  -->
+            <div class="item-img">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="recipe photo"
+              />
+            </div>
+            <!--  -->
+            <div class="item-text">
+              <div class="item-title">
+                <h4>buttermilk pancakes</h4>
+                <p class="item-price">$15.99</p>
+              </div>
+              <!--  -->
+              <p class="item-discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, voluptatibus deleniti. Voluptatem temporibus sit
+                possimus consequatur ea debitis minus? Veritatis.
+              </p>
+            </div>
+          </article>
+          <article class="item">
+            <!--  -->
+            <div class="item-img">
+              <img
+                src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+                alt="recipe photo"
+              />
+            </div>
+            <!--  -->
+            <div class="item-text">
+              <div class="item-title">
+                <h4>buttermilk pancakes</h4>
+                <p class="item-price">$15.99</p>
+              </div>
+              <!--  -->
+              <p class="item-discription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, voluptatibus deleniti. Voluptatem temporibus sit
+                possimus consequatur ea debitis minus? Veritatis.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="menu-add">
+          <button class="add-new add-recipe-btn">
+            add new recipe<i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>created by Momen nasser &copy; 2021</footer>
+
+    <div class="modal add-recipe">
+      <header>
+        <h2 class="status-label">add recipe</h2>
+        <button class="btn close-modal-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </header>
+      <div class="content">
+        <form class="form-add-recipe">
+          <div class="field">
+            <label>recipe</label>
+            <input type="text" name="recipe" />
+          </div>
+          <div class="field">
+            <label>price</label>
+            <input type="number" name="price" />
+          </div>
+          <div class="field">
+            <label>image source</label>
+            <input type="text" name="image" class="image-src" />
+          </div>
+          <div class="field">
+            <label>descraption</label>
+            <textarea name="descraption" id="" cols="5" rows="4"></textarea>
+          </div>
+          <div class="field">
+            <label>category</label>
+            <input type="text" name="category" />
+          </div>
+          <div class="field">
+            <label>rateing between(0 , 5)</label>
+            <span class="rating-val">3.5</span>
+            <input type="range" name="rating" min="0" max="5" step=".5" />
+          </div>
+          <input type="submit" class="btn supmit-btn" value="add recipe" />
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
